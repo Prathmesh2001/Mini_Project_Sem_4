@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static '/main.css'%}">
+    <script src="https://kit.fontawesome.com/9e7b8f28a1.js" crossorigin="anonymous"></script>
+    <title>CMPE</title>
+    <style>
+        .back{
+            position: relative;
+            background-image:linear-gradient(rgba(1,1,1,0.5),rgba(1,1,1,1)), url("{% static '\cars.jpg' %}");
+            background-size: cover;
+            background-position: top;
+            height: 250vh;
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class='back'>
+        <nav class='navbar '>
+            <h2 class="lg-heading text-white">CMPE</h2>
+            <ul class='nav-links text-white'>
+                <li class='nav-items'><a class="effect1" href='\'>Home</a></li>
+                <li class='nav-items'><a href='\aboutus'>About</a></li>
+                <li class='nav-items'><a href='\contactus'>Contact</a></li>
+            </ul>
+        </nav>
+        {% block content %}
+
+        {% endblock %}
+    </header>
+
+    <footer class="footers">
+        <div class="social-media-links">
+            <i class="fab fa-facebook fa-3x" aria-hidden="true"></i>
+            <i class="fab fa-instagram fa-3x" aria-hidden="true"></i>
+            <i class="fab fa-twitter fa-3x" aria-hidden="true"></i>
+        </div>
+        <p>CSPE &copy; 2021. All Rights Reserved</p>
+    </footer>
+    
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;550;600&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+a,p{
+    font-size: 1.8rem;
+    padding-bottom: 0.5em;
+    letter-spacing: 0.05em;
+}
+
+h1,h2,h3,h4{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.09em;
+    font-weight: 500;
+}
+
+a:link{text-decoration: none;}
+a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+a:active{text-decoration: none;}
+
+
+.navbar{
+    padding: 1rem 0;
+    background-color: rgba(0,0,0,0.6);
+}
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.navbar h2{
+    margin: 0 10rem;
+    float: left;
+}
+.navbar .nav-links{
+    float: right;
+}
+.nav-links{
+    margin: 0 10rem;
+    text-transform: uppercase;
+}
+.nav-items{
+    display: inline-block;
+    padding: 0.5rem 2rem;
+}
+.nav-items a:link,
+.nav-items a:visited{
+    color: #f4f4f4;
+    padding-bottom: 1px;
+}
+
+.nav-items a:link:hover{
+    border-bottom: 1.2px solid white;
+}
+
+.to-the-center{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+
+/* ############################ utility classes ########################## */
+.lg-heading{
+    font-size: 2.7rem;
+}
+.md-heading{
+    font-size: 2rem;
+}
+.text-white{
+    color: white;
+}
+
+.forms{
+    margin: 8rem 10rem;
+    padding: 4em;
+    background-color: rgba(0,0,0,0.65);
+    border: 2px solid rgba(0,0,0);
+    box-shadow: 6px 6px 15px 5px rgba(0, 0, 0, 0.7), 6px 6px 15px 5px rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    width: 60rem;
+    /* height: 50rem; */
+}
+.forms p{
+    display: inline-block;
+    margin: 0.6rem;
+    padding: 1rem 0;
+}
+.forms input{
+    float: right;
+    margin: 0.6rem;
+    padding: 6px 14px;
+}
+
+.text-center{
+    margin-top: 2.3rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+input[type=submit] {
+    margin: 1rem 0;
+    padding: 0.8em 0;
+}
+
+.btn-grey{
+    border: 2px solid rgba(150, 150, 150);
+    background-color: rgba(200,200,200);
+    border-radius: 5px;
+    width: 100%;
+}
+.btn-grey:hover{
+    background-color: rgba(100,100,100, 0.6);
+    color: rgba(200,200,200);
+}
+
+/* ####################### footer ########################### */
+.footers{
+    background-color: #1b1e1f;
+    color: azure;
+    padding-bottom: 5rem;
+    text-align: center;
+}
+.social-media-links i{
+    margin: 2.5rem;
+}
+
+
+/* ###########################  about us ########################## */
+
+.about-text{
+    /* border: 1px red solid; */
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    margin: 10rem;
+    padding: 2.5em;
+}
