@@ -7,15 +7,40 @@
 
     <div class="text-white to-the-center">
         <form class="forms" action="">
-            <p>Car Model</p><input type="text"><br>
-            <p>Car Age</p><input type="number"><br>
-            <p>Car Purchase Date</p><input type="date"><br>
-            <p>Kilometers driven</p><input type="number"><br>
-            <p>Mileage</p><input type="number"><br>
-            <p>Horse Power</p><input type="number"><br>
-            <p>Ownership</p><input type="number"><br>
-            <p>Scratches</p><input type="number"><br>
-            <p>Dents</p><input type="number"><br>
+            <label for="model">Car Model</label>
+            <input type="text" id="model"><br>
+
+            <label for="age">Car Age</label>
+            <input type="number" id="age"><br>
+
+            <label for="purchase_date">Car Purchase Date</label>
+            <input class="ip-date" type="date" id="purchase_date"><br>
+
+            <label for="kms">Kilometers driven</label>
+            <input type="number" id="kms"><br>
+
+            <label for="milage">Mileage</label>
+            <input type="number" id="milage"><br>
+
+            <label for="hp">Horse Power</label>
+            <input type="number" id="hp"><br>
+
+            <label for="owner">Ownership</label>
+            <input type="number" id="owner"><br>
+
+            <label for="transmission">Transmission Type</label>
+            <select class="ip-select" id="transmission">
+                <option value="choose">Choose</option>
+                <option value="manual">Manual</option>
+                <option value="automatic">Automatic</option>
+            </select><br>
+
+            <label for="scratches">Scratches</label>
+            <input type="number" id="scratches"><br>
+
+            <label for="dents">Dents</label>
+            <input type="number" id="dents"><br>
+
 
             <input  class="btn-grey text-center" type="submit"><br><br>
         </form>
