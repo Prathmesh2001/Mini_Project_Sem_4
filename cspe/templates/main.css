@@ -88,12 +88,11 @@ a:active{text-decoration: none;}
 .forms{
     margin: 8rem 10rem;
     padding: 4em;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.85);
     border: 2px solid rgba(0,0,0);
     box-shadow: 6px 6px 15px 5px rgba(0, 0, 0, 0.7), 6px 6px 15px 5px rgba(0, 0, 0, 0.7);
     border-radius: 20px;
     width: 60rem;
-    /* height: 50rem; */
 }
 .forms label{
     display: inline-block;
@@ -102,12 +101,9 @@ a:active{text-decoration: none;}
 }
 .forms .ip-select, .forms option{
     display: inline-block;
-    padding: 6px 51px;
+    padding: 6px 40px;
 }
-.forms .ip-date{
-    display: inline-block;
-    padding-left:23px;
-}
+
 .forms input, .forms select{
     float: right;
     margin: 0.6rem;
@@ -164,7 +160,7 @@ input[type=submit] {
 
 .contact-form{
     width: 80%;
-    margin: 0 auto;
+    margin: 5rem auto;
     padding: 5rem 0;
     color: white;
 }

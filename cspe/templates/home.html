@@ -6,31 +6,32 @@
     <h2 class="text-center lg-heading text-white">Home Page</h2>
 
     <div class="text-white to-the-center">
-        <form class="forms" action="">
-            <label for="model">Car Model</label>
-            <input type="text" id="model"><br>
-
+        <form class="forms" action="/" method="POST">
+            {% csrf_token %}
             <label for="age">Car Age</label>
-            <input type="number" id="age"><br>
-
-            <label for="purchase_date">Car Purchase Date</label>
-            <input class="ip-date" type="date" id="purchase_date"><br>
+            <input type="number" id="age" name="car_age"><br>
 
             <label for="kms">Kilometers driven</label>
-            <input type="number" id="kms"><br>
+            <input type="number" id="kms" name="km_driven"><br>
 
             <label for="milage">Mileage</label>
-            <input type="number" id="milage"><br>
+            <input type="number" id="milage" name="mileage"><br>
 
             <label for="hp">Horse Power</label>
-            <input type="number" id="hp"><br>
+            <input type="number" id="hp" name="horsepower"><br>
 
             <label for="owner">Ownership</label>
-            <input type="number" id="owner"><br>
+            <select class="ip-select" id="owner">
+                <option value="choose">----Choose----</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select><br>
 
             <label for="transmission">Transmission Type</label>
             <select class="ip-select" id="transmission">
-                <option value="choose">Choose</option>
+                <option value="choose">----Choose----</option>
                 <option value="manual">Manual</option>
                 <option value="automatic">Automatic</option>
             </select><br>

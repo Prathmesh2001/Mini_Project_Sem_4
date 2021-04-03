@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'cspe_app.apps.CspeAppConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -75,8 +76,12 @@ WSGI_APPLICATION = 'cspe.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'cspe_db',
+        'USER': 'root',
+        'PASSWORD': 'mypass',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
     }
 }
 
@@ -119,8 +124,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-MEDIA_URL = ''
-MEDIA_ROOT = ''
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'templates')
