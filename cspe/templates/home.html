@@ -6,44 +6,54 @@
     <h2 class="text-center lg-heading text-white">Home Page</h2>
 
     <div class="text-white to-the-center">
-        <form class="forms" action="/" method="POST">
+        <form class="forms" action="\result" method="POST">
             {% csrf_token %}
             <label for="age">Car Age</label>
-            <input type="number" id="age" name="car_age"><br>
+            <input type="number" id="age" name="car_age" required=""><br>
 
             <label for="kms">Kilometers driven</label>
-            <input type="number" id="kms" name="km_driven"><br>
+            <input type="number" id="kms" name="km_driven" required=""><br>
 
             <label for="milage">Mileage</label>
-            <input type="number" id="milage" name="mileage"><br>
+            <input type="number" id="milage" name="mileage" step="0.01" required=""><br>
+
+            <label for="engine">Engine (in cc)</label>
+            <input type="number" id="engine" name="engine" required=""><br>
 
             <label for="hp">Horse Power</label>
-            <input type="number" id="hp" name="horsepower"><br>
+            <input type="number" id="hp" name="horsepower" step="0.01" required=""><br>
 
-            <label for="owner">Ownership</label>
-            <select class="ip-select" id="owner">
+            <label for="seats">Seats</label>
+            <input type="number" id="seats" name="seats" required=""><br>
+
+            <label for="fuel_type">Fuel Type</label>
+            <select class="ip-select" id="fuel_type" name="fuel_type">
                 <option value="choose">----Choose----</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
+                <option value="diesel">Diesel</option>
+                <option value="electric">Electric</option>
+                <option value="lpg">LPG</option>
+                <option value="petrol">Petrol</option>
+                <option value="cng">CNG</option>
             </select><br>
 
-            <label for="transmission">Transmission Type</label>
-            <select class="ip-select" id="transmission">
+            <label for="transmission_type">Transmission Type</label>
+            <select class="ip-select" id="transmission_type" name="transmission_type">
                 <option value="choose">----Choose----</option>
                 <option value="manual">Manual</option>
                 <option value="automatic">Automatic</option>
             </select><br>
 
-            <label for="scratches">Scratches</label>
-            <input type="number" id="scratches"><br>
+            <label for="structural_damage">Structural Damage</label>
+            <select class="ip-select" id="structural_damage" name="structural_damage">
+                <option value="choose">----Choose----</option>
+                <option value="none">None</option>
+                <option value="low">Low</option>
+                <option value="moderate">Moderate</option>
+            </select><br>
 
-            <label for="dents">Dents</label>
-            <input type="number" id="dents"><br>
 
 
-            <input  class="btn-grey text-center" type="submit"><br><br>
+            <button class="btn-grey text-center" type="submit">SUBMIT</button><br><br>
         </form>
     </div>
 

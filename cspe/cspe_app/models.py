@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 class CarDetails(models.Model):
     car_age = models.IntegerField()
     km_driven = models.IntegerField()
-    mileage = models.IntegerField()
-    horsepower = models.IntegerField()
-
+    mileage = models.FloatField()
+    horsepower = models.FloatField()
+    price = models.FloatField()
 

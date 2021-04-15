@@ -11,7 +11,7 @@ html{
     font-size: 62.5%;
 }
 
-a,p, label{
+a,p, label, li{
     font-size: 1.8rem;
     padding-bottom: 0.5em;
     letter-spacing: 0.05em;
@@ -31,7 +31,7 @@ a:active{text-decoration: none;}
 
 .navbar{
     padding: 1rem 0;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.7);
 }
 .navbar::after{
     content: '';
@@ -73,7 +73,6 @@ a:active{text-decoration: none;}
 
 
 
-
 /* ############################ utility classes ########################## */
 .lg-heading{
     font-size: 2.7rem;
@@ -85,10 +84,11 @@ a:active{text-decoration: none;}
     color: white;
 }
 
+
 .forms{
     margin: 8rem 10rem;
     padding: 4em;
-    background-color: rgba(0,0,0,0.85);
+    background-color: rgba(0,0,0,0.8);
     border: 2px solid rgba(0,0,0);
     box-shadow: 6px 6px 15px 5px rgba(0, 0, 0, 0.7), 6px 6px 15px 5px rgba(0, 0, 0, 0.7);
     border-radius: 20px;
@@ -98,6 +98,7 @@ a:active{text-decoration: none;}
     display: inline-block;
     margin: 0.6rem;
     padding: 1rem 0;
+    font-size: 1.9rem;
 }
 .forms .ip-select, .forms option{
     display: inline-block;
@@ -116,7 +117,7 @@ a:active{text-decoration: none;}
     text-transform: uppercase;
 }
 
-input[type=submit] {
+.forms button{
     margin: 1rem 0;
     padding: 0.8em 0;
 }
@@ -132,6 +133,17 @@ input[type=submit] {
     color: rgba(200,200,200);
 }
 
+.underline{
+    border-bottom: 0.3rem solid rgb(211, 25, 25);
+    width: 100%;
+    font-weight: 550;
+}
+
+.fa-plus{
+    size: 12px;
+}
+
+
 /* ####################### footer ########################### */
 .footers{
     background-color: #1b1e1f;
@@ -143,6 +155,102 @@ input[type=submit] {
     margin: 2.5rem;
 }
 
+/* ############################ result page ####################### */
+.result-head{
+    background: rgba(0, 0, 0, 0.8);
+    margin-top: 5rem;
+    padding: 0.5rem 0;
+}
+.show-result{
+    /* background: rgba(0, 0, 0, 0.9); */
+    margin: 10rem 10rem;
+    padding : 5em;
+}
+.show-result ul {
+    list-style: none; /* Remove default bullets */
+    margin-top: 4rem;
+}
+.show-result li{
+    padding-bottom: 1.5rem;
+}
+.show-result h2{
+    padding-bottom: 0.5rem;
+}
+.show-result .right-block span{
+    padding-left: 2rem;
+    color: rgb(0, 240, 52);
+}
+  
+.left-block ul li::before {
+    font-family: "FontAwesome";
+    content: '\f1b9';  /*car icon*/
+    font-size: medium;
+    color: rgb(255, 255, 255); /* Change the color */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1.2em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    margin-right: 1rem;
+}
+.left-block{
+    width: 49%;
+    float: left;
+    background: rgba(0, 0, 0, 0.8);
+    padding : 5em;
+    border-radius: 10px;
+}
+.right-block{
+    width: 49%;
+    float: right;
+    background: rgba(0, 0, 0, 0.8);
+    padding : 5em;
+    border-radius: 10px;
+    height: 60rem;
+}
+.right-block ul li::before {
+    font-family: "FontAwesome";
+    content: '\f00c';  /*check icon */
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255); /* Change the color */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1.2em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    margin-right: 1rem;
+}
+.show-result::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.inr-sign::before{
+    content:"\20B9";
+}
+
+/* To hover the suggestions */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    width: 40rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border:1.5px solid rgb(211, 25, 25);
+    border-radius: 5px;
+    z-index: 1;
+    color: white;
+    padding: 1rem;
+}
+.dropdown-content p{font-size: 1.5rem;}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 
 /* ###########################  about us ########################## */
 
@@ -152,6 +260,9 @@ input[type=submit] {
     border-radius: 20px;
     margin: 10rem;
     padding: 2.5em;
+    letter-spacing: 0.03em;
+    word-spacing: 0.08em;
+    line-height: 4rem;
 }
 
 
@@ -206,6 +317,9 @@ input[type=submit] {
     font-size: 2.1rem;
     font-weight: 600;
     letter-spacing: 0.07em;
+}
+.company-address p{
+    padding-left: 4.8rem;
 }
 
 .company-address img{

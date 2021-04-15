@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section>
+
+    <div class="result-head">
+        <h2 class="text-center lg-heading text-white">Thank you for using our Website <br>Below is the price prediction for
+            your car</h2>
+    </div>
+
+    <div class="show-result">
+        <div class="left-block">
+            <div class="md-heading text-white">
+                <h2 class="underline">Car Details</h2>
+                <ul>
+                    <li>Car Age : <span>{{car_age}}</span></li>
+                    <li>Kilometers driven : <span>{{km_driven}}</span></li>
+                    <li>Mileage : <span>{{mileage}}</span></li>
+                    <li>Engine (in cc) : <span>{{engine}}</span></li>
+                    <li>Horse Power : <span>{{horsepower}}</span></li>
+                    <li>Seats : <span>{{seats}}</span></li>
+                    <li>Fuel Type : <span style="text-transform:capitalize;">{{fuel_type}}</span></li>
+                    <li>Transmission Type : <span style="text-transform:capitalize;">{{transmission_type}}</span></li>
+                    <li>Structural Damage : <span style="text-transform:capitalize;">{{structural_damage}}</span></li>
+                </ul>
+
+                <h3 class="text-center">Predicted Price for the car is  <span class="inr-sign"></span>{{price}}</h3>
+            </div>
+        </div>
+        <div class="right-block">
+            <div class="md-heading text-white">
+                <h2 class="underline">Suggestions</h2>
+                <ul>
+                    <li class="dropdown">Repair the Structural damages <br> 
+                         <span> <i class="fa fa-plus" aria-hidden="true"></i> {{damage_profit}}</span>
+                    <div class="dropdown-content"><p>If structural damage is low, repairing them will certainly be beneficial.<br> <br>
+                        Structural damage gives a bad impression to the buyer even when the selling price is genuine.<br> <br>
+                        So it is recommended to get the structural damages fixed.
+                    </p></div></li>
+
+                    <li class="dropdown">Install CNG kit <br> 
+                         <span> <i class="fa fa-plus" aria-hidden="true"></i> {{cng_req}}</span>
+                    <div class="dropdown-content"><p>Installing CNG kit is quite expensive.<br> <br> 
+                        But in long run, CNG kit will prove to be a great money saver.<br> <br>
+                        So having CNG kit will increase the car's value as well as benefit both the buyer and seller.<br> <br>
+                    </p></div></li>
+
+                    <li class="dropdown">Advanced Braking System <br> 
+                         <span> <i class="fa fa-plus" aria-hidden="true"></i> {{abs_sys}}</span>
+                    <div class="dropdown-content"><p>In any vehicle, an efficient braking system is essential not only for the protection
+                         of its occupants but also for those outside the vehicle. It will add to your car value. <br> <br>
+                         Even if you don't want to sell the car, having ABS will be ensure your safety and the safety of your surrounding.
+                        </p></div></li>
+
+                    <li class="dropdown">Replacing seat covers <br> 
+                         <span> <i class="fa fa-plus fa-0.5x" aria-hidden="true"></i> {{seat_cover}}</span>
+                    <div class="dropdown-content"><p>If seat covers are torn / uncomfortable / old, it is adviced to change the seat covers. <br>
+                        Although leather or resin seat covers are very attractive and can be profitable.
+
+                    </p></div></li>
+                    
+                    <li class="dropdown">Installing Navigation System <br> 
+                         <span> <i class="fa fa-plus" aria-hidden="true"></i> {{nav_sys}}</span><br>
+                    <div class="dropdown-content"><p>
+                        Navigation Systems are more efficient than smart phone navigations. <br>
+                        Having a navigation system in car is optional but it will add to the car's value. <br>
+                    </p></div></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</section>
+{% endblock %}
